@@ -1,0 +1,28 @@
+I need a function for each possible output. 
+It seems good practice to use the googlesheets pacakge naming system
+
+bt_read.log
+bt_read.schedule
+bt_read.stones
+
+etc. 
+
+To avoid name clashes. 
+
+All output should be dataframes. 
+
+Ideally this could feed into a general read.bayestraits function, with an argument for which type to use. 
+
+I need to identify how the output files differ based on the model run. But I think they are pretty generic. 
+Particulary in the case of continuous models. 
+
+Added bonus:
+	Make an attributes function which takes the top settings from the header of each file and adds them
+	as attributes to the data frame output
+	
+Writing Bayestraits files would also be a useful function that I already have
+
+bt_write.bayestraits
+	With data object, tree object inputs
+		Also taxa column & value column, chaning NAs etc. 
+		I have mostly done this I think. 

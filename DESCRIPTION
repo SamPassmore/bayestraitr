@@ -1,0 +1,22 @@
+Package: bayestraitr
+Type: Package
+Title: Functions In R For BayesTraits Input And Output
+Version: 0.1.0
+Author: person("Sam", "Passmore", email = "passmore.sam@gmail.com", 
+  role = c("aut", "cre"))
+Maintainer: Sam Passmore <passmore.sam@gmail.com>
+Description: This package holds functions for creating files to use as inputs into BayesTraits
+    and read files to bring BayesTraits output into R for further exploration of analyses. 
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+  dplyr,
+  stringr,
+  tidyr,
+  purrr
+Suggests:
+    ape,
+    testthat
+Imports: tidyverse
+RoxygenNote: 6.0.1

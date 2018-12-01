@@ -5,6 +5,10 @@ To install this package run this line:
 
 `devtools::install_github('SamPassmore/bayestraitr')`
 
+and load with
+
+`library(bayestraitr)`
+
 ### Example
 
 There are three functions in this package at the moment for reading in BayesTrait *.Log files, *.Schedule files, & *.Stones

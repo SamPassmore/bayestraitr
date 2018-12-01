@@ -26,9 +26,10 @@ This returns a list of 3 items. `settings` holids the header of the Stones file,
 
 The function `bt_write` takes various tree types (e.g. `phylo` & `multiphylo`) and `data.frame` input and writes them as input files for BayesTraits. 
 
-`library(ape)
+```
+library(ape)
 tree = read.nexus('bayestraits_output/Artiodactyl.trees')
 data = read.csv('bayestraits_output/Artiodactyl.tsv', sep = "\t")
 rownames(data) = data$taxa
 bt_write(tree = tree, data = data, variables = 'trait1', filename = 'test')
-`
+```

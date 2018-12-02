@@ -11,12 +11,13 @@ License: GPL-2 | file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-  dplyr,
-  stringr,
-  tidyr,
-  purrr
 Suggests:
     ape,
     testthat
-Imports: tidyverse
+Imports:   
+  dplyr,
+  stringr,
+  tidyr,
+  tidyverse,
+  purrr
 RoxygenNote: 6.0.1

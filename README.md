@@ -16,7 +16,7 @@ There are three functions in this package at the moment for reading in BayesTrai
 `log = bt_read.log('./bayestrait_output/Artiodactyl.txt.Log.txt')`
 
 Will return a list of the log matrix & the file header.
-To access the log data frame you only need to type `log`, but to access a column you currently need to use `log[,"Lh"]` rather than using the `$` operator.
+To access the log data frame you need to use `log$output`
 
 `schedule = bt_read.schedule('./bayestrait_output/Artiodactyl.txt.Schedule.txt')`
 

@@ -2,7 +2,7 @@ context("misc. tests")
 
 
 test_that("bt class testing", {
-  file = "../../bayestraits_output/MS_MCMC.Log.txt" %>%
+  file = "./bayestraits_output/MS_MCMC.Log.txt" %>%
     bt_read.log()
 
   expect_true(compare(colnames(file$output),

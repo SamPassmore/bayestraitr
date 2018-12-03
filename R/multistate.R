@@ -1,3 +1,12 @@
+#' @export summary.btclass
+make_btclass <- function(x) {
+  class(x) <- c("bt", class(x))
+  x
+}
+
+'[.bt' <- function(x, ...) '['(x[[1]], ...)
+
+
 #' Read BayesTraits Log files
 #'
 #' Given a the path of a BayesTraits log file, this function will find the start of the logged output and import the data as a data.frame into R.
@@ -6,7 +15,6 @@
 #' @return A data.frame of the logs found in the BayesTraits log file & a list of settings taken from the header of the file
 #' @export
 
-'[.bt' <- function(x, ...) '['(x[[1]], ...)
 
 bt_read.log <- function(filename){
   con = file(filename, "r")
@@ -36,14 +44,14 @@ bt_read.log <- function(filename){
 
 .get_attributes = function(line){
   line %>%
-  as_tibble() %>% #View()
+  dplyr::as_tibble() %>% #View()
     tidyr::separate(value, into = c("header", "info"), sep = "\\s{2,}", extra = "merge", fill = "right") %>%
-    mutate(header = na_if(header, "")) %>%
-    fill(header) %>% # fills empty info
-    filter(!is.na(info)) %>% # gets rid of titles with empty info
-    mutate(info = str_trim(info)) %>%
+    dplyr::mutate(header = dplyr::na_if(header, "")) %>%
+    tidyr::fill(header) %>% # fills empty info
+    dplyr::filter(!is.na(info)) %>% # gets rid of titles with empty info
+    dplyr::mutate(info = stringr::str_trim(info)) %>%
     split(.$header) %>%
-    map(pull, info)
+    purrr::map(dplyr::pull, info)
 }
 
 #' Read BayesTraits Schedule files

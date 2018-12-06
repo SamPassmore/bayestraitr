@@ -37,9 +37,9 @@ bt_read.log <- function(filename){
              header = TRUE, check.names = FALSE, quote=NULL)
   d[sapply(d, function(x) all(is.na(x)))] <- NULL
 
-  obj = list(output = d, attr = settings)
-  class(obj) <- append(class(obj), c("bt_log", "bt"))
-  obj
+  attr(d,"settings") <- settings
+  class(d) <- append(class(d), c("bt_log"))
+  d
 }
 
 .get_attributes = function(line){
@@ -82,9 +82,9 @@ bt_read.schedule = function(filename){
                  header = TRUE, check.names = FALSE, quote=NULL)
   d[sapply(d, function(x) all(is.na(x)))] <- NULL
 
-  obj = d
-  class(obj) <- append(class(obj), c("bt_schedule", "bt"))
-  obj
+  attr(d,"settings") <- settings
+  class(d) <- append(class(d), c("bt_schedule", "bt"))
+  d
 }
 
 #' Read BayesTraits Stones files
@@ -112,8 +112,9 @@ bt_read.stones = function(filename){
     str_extract_all("[0-9\\.]+") %>%
     as.numeric()
 
-  obj = list(settings = settings, stones_sampling = stones,
+  obj = list(stones_sampling = stones,
              marginal_likelihood = marginal_likelihood)
+  attr(obj,"settings") <- settings
   class(obj) <- append(class(obj), c("bt_stones", "bt"))
   obj
 }

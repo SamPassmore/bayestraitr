@@ -16,7 +16,7 @@ test_that("Multistate Stones settings is read correctly", {
   file = "../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt" %>%
     bt_read.stones()
 
-  expect_true(compare(file$settings,
+  expect_true(compare(attributes(file)$settings,
                       list(`Steppingstone sampler:` =
                              c("No Stones:                  100",
                                 "Start It:                   1010001",
@@ -29,7 +29,7 @@ test_that("Multistate Stones log-likelihood is read correctly", {
   file = "../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt" %>%
     bt_read.stones()
 
-  expect_true(compare(file$settings,
+  expect_true(compare(attributes(file)$settings,
                       list(`Steppingstone sampler:` =
                              c("No Stones:                  100",
                                "Start It:                   1010001",

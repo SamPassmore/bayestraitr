@@ -20,7 +20,6 @@ There are three functions in this package at the moment for reading in BayesTrai
 
 Will return a dataframe of the log matrix.
 The file header are contained as an attribute which can be accessed by using `attributes(log)$settings`
-To access the log data frame you need to use `log$output`
 
 `schedule = bt_read.schedule('./bayestrait_output/Artiodactyl.txt.Schedule.txt')`
 

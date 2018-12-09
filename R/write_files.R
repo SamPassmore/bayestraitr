@@ -8,7 +8,7 @@
 #' @param variables a character string or character vector of the names of columns to subset to, alternatively you can use the numeric values to indicate the column
 #' @param dir the directory to save the output files to. Defaults to current directory
 #' @param na.omit a TRUE/FALSE argument to specify whether NA values should be removed from your final data file
-#' @param optional: used to name the output file. Will use variable names by default.
+#' @param filename used to name the output file. Will use variable names by default.
 #' @return two files will be saved to the specified directory *.bttrees holding the pruned tree files and *.btdata holding the subset and formatted data.
 #' @export
 

@@ -1,12 +1,3 @@
-#' @export summary.btclass
-make_btclass <- function(x) {
-  class(x) <- c("bt", class(x))
-  x
-}
-
-'[.bt' <- function(x, ...) '['(x[[1]], ...)
-
-
 #' Read BayesTraits Log files
 #'
 #' Given a the path of a BayesTraits log file, this function will find the start of the logged output and import the data as a data.frame into R.
@@ -83,7 +74,7 @@ bt_read.schedule = function(filename){
   d[sapply(d, function(x) all(is.na(x)))] <- NULL
 
   attr(d,"settings") <- settings
-  class(d) <- append(class(d), c("bt_schedule", "bt"))
+  class(d) <- append(class(d), c("bt_schedule"))
   d
 }
 
@@ -115,6 +106,6 @@ bt_read.stones = function(filename){
   obj = list(stones_sampling = stones,
              marginal_likelihood = marginal_likelihood)
   attr(obj,"settings") <- settings
-  class(obj) <- append(class(obj), c("bt_stones", "bt"))
+  class(obj) <- append(class(obj), c("bt_stones"))
   obj
 }

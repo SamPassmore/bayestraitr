@@ -1,0 +1,138 @@
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(testthat)
+> library(bayestraitr)
+> 
+> test_check("bayestraitr")
+── 1. Error: Multistate MCMC Log file is read correctly (@test_multistate.R#7)  
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC.Log.txt" %>% bt_read.log() at testthat/test_multistate.R:7
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.log(.)
+10: file(filename, "r")
+
+── 2. Error: Multistate Max. Likelihood Log file is read correctly (@test_multis
+cannot open the connection
+1: "../../bayestraits_output/MS_ML.Log.txt" %>% bt_read.log() at testthat/test_multistate.R:16
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.log(.)
+10: file(filename, "r")
+
+── 3. Error: Multistate MCMC w Tags Log file is read correctly (@test_multistate
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC_wSS_wTag.Log.txt" %>% bt_read.log() at testthat/test_multistate.R:25
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.log(.)
+10: file(filename, "r")
+
+── 4. Error: Multistate MCMC w MRCA Log file is read correctly (@test_multistate
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC_wSS_wMRCA.Log.txt" %>% bt_read.log() at testthat/test_multistate.R:35
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.log(.)
+10: file(filename, "r")
+
+── 5. Error: Multistate MCMC w Fossilisation Log file is read correctly (@test_m
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC_wF.Log.txt" %>% bt_read.log() at testthat/test_multistate.R:44
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.log(.)
+10: file(filename, "r")
+
+── 6. Error: Multistate Stones sampling is read correctly (@test_stones.R#7)  ──
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt" %>% bt_read.stones() at testthat/test_stones.R:7
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.stones(.)
+10: file(filename, "r")
+
+── 7. Error: Multistate Stones settings is read correctly (@test_stones.R#16)  ─
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt" %>% bt_read.stones() at testthat/test_stones.R:16
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.stones(.)
+10: file(filename, "r")
+
+── 8. Error: Multistate Stones log-likelihood is read correctly (@test_stones.R#
+cannot open the connection
+1: "../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt" %>% bt_read.stones() at testthat/test_stones.R:29
+2: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))
+3: eval(quote(`_fseq`(`_lhs`)), env, env)
+4: eval(quote(`_fseq`(`_lhs`)), env, env)
+5: `_fseq`(`_lhs`)
+6: freduce(value, `_function_list`)
+7: withVisible(function_list[[k]](value))
+8: function_list[[k]](value)
+9: bt_read.stones(.)
+10: file(filename, "r")
+
+══ testthat results  ═══════════════════════════════════════════════════════════
+OK: 8 SKIPPED: 0 FAILED: 8
+1. Error: Multistate MCMC Log file is read correctly (@test_multistate.R#7) 
+2. Error: Multistate Max. Likelihood Log file is read correctly (@test_multistate.R#16) 
+3. Error: Multistate MCMC w Tags Log file is read correctly (@test_multistate.R#25) 
+4. Error: Multistate MCMC w MRCA Log file is read correctly (@test_multistate.R#35) 
+5. Error: Multistate MCMC w Fossilisation Log file is read correctly (@test_multistate.R#44) 
+6. Error: Multistate Stones sampling is read correctly (@test_stones.R#7) 
+7. Error: Multistate Stones settings is read correctly (@test_stones.R#16) 
+8. Error: Multistate Stones log-likelihood is read correctly (@test_stones.R#29) 
+
+Error: testthat unit tests failed
+Execution halted

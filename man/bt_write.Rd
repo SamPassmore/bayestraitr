@@ -17,7 +17,7 @@ bt_write(tree, data, variables, dir = "./", na.omit = FALSE, filename)
 
 \item{na.omit}{a TRUE/FALSE argument to specify whether NA values should be removed from your final data file}
 
-\item{optional:}{used to name the output file. Will use variable names by default.}
+\item{filename}{used to name the output file. Will use variable names by default.}
 }
 \value{
 two files will be saved to the specified directory *.bttrees holding the pruned tree files and *.btdata holding the subset and formatted data.

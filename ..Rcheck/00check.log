@@ -1,0 +1,256 @@
+* using log directory ‘/Users/sp16194/Desktop/Projects_Git/bayestraitr/..Rcheck’
+* using R version 3.5.0 (2018-04-23)
+* using platform: x86_64-apple-darwin15.6.0 (64-bit)
+* using session charset: UTF-8
+* checking for file ‘./DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘bayestraitr’ version ‘0.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... WARNING
+Found the following executable files:
+  .git/objects/03/c3814f66c54cbd4b3f4e6601ebe72264171b35
+  .git/objects/04/1523a1bd80ec13acce714cf409a721ec235baf
+  .git/objects/07/070343bc0dd43d54a0d094322ce6bd2323d7f6
+  .git/objects/0b/102879ed0f145bfe8461988efa2ddffc92f7f0
+  .git/objects/0b/d2b8309dccf8030ad723f2835717f7e8341139
+  .git/objects/0d/8188509bc2c82c8a2af4a8ca8fcc2a5eb5a83e
+  .git/objects/0f/a7c4b8817591c2dff2b3997d2566320ac6d9fc
+  .git/objects/14/2e85fb4a024c7f3f704c72e2457b16164067d1
+  .git/objects/17/c00f9a3fab6f8cc8e5904e300b706ade58057d
+  .git/objects/17/db046d155d427cad81ebaf5180d0ebc4f5eb10
+  .git/objects/1c/6aeb67478397045e83d89712a36e8d4c41b233
+  .git/objects/1c/a24ccb06821d6b2cd6873b0350605a6544094f
+  .git/objects/1d/8a44097d4b14f78e41bb5baadf62d24d3a92a7
+  .git/objects/1e/08c460b49a153559cf258042793fbdd08592c1
+  .git/objects/1f/e3bbc97ca9d925c8c05f2e9ec7148f2b7e68fd
+  .git/objects/25/4d29bf40c08f9b65b09ec9380aa847a4709c98
+  .git/objects/25/9804f570f6fa7cff58f7e627f2018c17746ee0
+  .git/objects/26/50a02fe3042fbba15c181b7080e019a15bf3ef
+  .git/objects/26/8da9cfe2725c9acd7fa362e2170551864df817
+  .git/objects/26/b1f90d75900a32b2c0bd12a106dab96c8ed5d4
+  .git/objects/27/18a546bd0b84b79ad38e641acae64a5fed8083
+  .git/objects/2a/57e6af2b62cf01be8a69bd29931f99c049e32c
+  .git/objects/2b/eec079eb6b8032f03181a01e2ce72e37a3dbae
+  .git/objects/2e/f27d1191f7a69315224d5cf02555a4363a4129
+  .git/objects/31/e2019c0bfa1327d6bdb3d18f8e966027591db5
+  .git/objects/33/7421fd163e95c4967b303741bd624b4c40169f
+  .git/objects/35/2486688a679843943babf1cb4e43c5a743c94f
+  .git/objects/39/21e4cc687d4775db1a7af6669b662dcc77ce57
+  .git/objects/3a/06d5cb64c733b3583008f507b95a9062b0f20e
+  .git/objects/3a/98040b9fab5cadb8df801decfe9117479e277c
+  .git/objects/3c/c8cd44da491db59d23f93723c01f696ded570e
+  .git/objects/3d/5a9c9b82947b5b00878b3fe6fa220c352d1c2d
+  .git/objects/3d/e0292cd25fb72a8dfc8d54204649d1c06aea8a
+  .git/objects/3f/4f61dcbdc60c940a32d2ceaba68ec3d10f908b
+  .git/objects/42/decccf176097348d97f1a4af16e6caa404cfda
+  .git/objects/43/546a8203d7cedf41fb653d44f459666778cc3a
+  .git/objects/47/02e261512165b81e50ec6085f62f8270e4b3be
+  .git/objects/48/fafe1732605159dcfb624c8aff7a25a48dbd88
+  .git/objects/49/7f8bfcfb9d13ad61d14d79963641e9aeab41b0
+  .git/objects/49/e2684fb45edf65014aaa81bc58ca863cdc726c
+  .git/objects/4c/e951381727b040353734fc4e09f9e2b41e123e
+  .git/objects/50/fbfddb87081de23e66f7f72ec8d08f87ceae0f
+  .git/objects/52/0e76dc53625d17c85a49177df7ff00768e5a11
+  .git/objects/56/d8dab70194978243b57727a67075f69edc8629
+  .git/objects/59/2d7f300f5da33fbb7600e1147f9cf4d485a5a3
+  .git/objects/5a/5dc22fb3a27894044f2fe5601c3fa5fc36d714
+  .git/objects/5a/9554d5031718d560075614b663ca78c3dcf590
+  .git/objects/5b/6a0652566d10360493952aec6d4a4febc77083
+  .git/objects/5b/a8a620534c8e91c8781964fc398b60fd1c73fa
+  .git/objects/5e/0f90052f36a0c1661930c691fb8283665a3f47
+  .git/objects/5f/3c931ba65be16be20c8f573d1d1f16da339ab4
+  .git/objects/65/c8d8b7e521e7c88d163d6e323a101e7e880f48
+  .git/objects/67/923638c104a545f48ff92d51d9117e04c9ca7a
+  .git/objects/67/dc9b4fa7dec15d8176fb5ab83e572efd754861
+  .git/objects/6a/76589dd0f524ffcaa4dcfb3147d63904cfe41f
+  .git/objects/6a/c9c8c14770e2fad8c849b8438169a6f59fbdd3
+  .git/objects/6d/6709f86177ab3ac0089b280781d3d8fd413ed2
+  .git/objects/6e/8a6576339229a7751bb20b98a8bbcd3b001af3
+  .git/objects/6f/7b4aca454a30787676e978ba59d56256123cae
+  .git/objects/6f/81d62617e2cf8cf2965709d110d9a8b2ec5ab4
+  .git/objects/6f/829708808f7402f158dda7a8d25fcf8e679c6c
+  .git/objects/71/4853c86f3d5f95ea446d31b4055da60cc99ba5
+  .git/objects/73/0425b156696a9ca9b431917c5a786352c91e87
+  .git/objects/73/1a3493a8d68709ebb0c8b2ea4c05ad1ae68bb5
+  .git/objects/75/dcddbbdaf4832fcbdd93fff1d3eb13bdacf2ac
+  .git/objects/78/83a7019e8c5e680b0d1ee124c5e36cd5fc7450
+  .git/objects/79/710d65ced4bc63cd17b4892bf0580070541a66
+  .git/objects/7a/bc084cef468732353f74ff291889e412b84a3e
+  .git/objects/7b/4535d2ef4dcd7566703f6ef84af72f692858ed
+  .git/objects/7c/cedca15e01d50ca6bb31cbfa4a93b13ca36a44
+  .git/objects/7d/2df1b746bb0537a900a84d3dfb1e44b331be18
+  .git/objects/7e/7e191efaf5a828d48b697080e5ee9397ab5b1b
+  .git/objects/7e/9ad61b58c4c3b904b2b33ff7c2ffc747f96ce7
+  .git/objects/7f/1230aef254dfa0c859e6d8a8402014b18d94f1
+  .git/objects/83/7f2438c000a2b9b8330277db15ff5b36e0f222
+  .git/objects/84/ec4601b732d3ce5aaa63a7421b3f3d1f7133e9
+  .git/objects/85/3dca6e659c84e2265e8207b8d515ef1320486a
+  .git/objects/85/cd2d5fb5c35bef49d436117cb8e649103a4123
+  .git/objects/86/ee9ad8c7829c151423c8638d7174e648510954
+  .git/objects/87/8620550647e40f30c0df2b7e6f26374222d845
+  .git/objects/8e/02e67cecb96cde7d4da49f83346d4da0c7194a
+  .git/objects/91/114bf2f2bba5e0c5252e75018da19b869776f1
+  .git/objects/92/dfce2eedb360ca52cdf066131af7a20acfed37
+  .git/objects/97/afc2e9699053fc33f082e60bc245d6c782e3e3
+  .git/objects/9a/1698fedf5deddc22c3b4facff661d047959dfc
+  .git/objects/9a/e0b2cf5713d4369dd174216f88bfc14818e608
+  .git/objects/9e/3cb279a67e2c318652e3b568c66d668f98a2ce
+  .git/objects/a3/3e1c08b790e935f154ccc2e3471b472f041357
+  .git/objects/a8/f22d8b1bfebc973166e37cb94adf6f9723ba0c
+  .git/objects/ad/9c482601463c1027adce802ee655c062622e20
+  .git/objects/ae/43d4748e696a7568e5f1419915c0625584b902
+  .git/objects/ae/836c8f227c0179ec904ec6e95b1994ee563c84
+  .git/objects/b0/27f227dd1c198c400b81309f3091b886bab3ff
+  .git/objects/b3/1ec461171c4eaa0fe2ffd7741577ab9e99b270
+  .git/objects/b3/872f1dcded3b485fdf73ea7bd2360c8ac2fed7
+  .git/objects/b5/f745812f39d57745722b2cf9f550f342183f0d
+  .git/objects/b6/0877ea76904670f4b5c31ac83e5083f4dc6f36
+  .git/objects/b8/d3921a43f3b8274cc40290c633b4a4188b628a
+  .git/objects/b9/676fc14d322cbebd219f377d1143d2572a72e8
+  .git/objects/b9/967789c2f0b18e89cc95231877da35c5fcb165
+  .git/objects/b9/c19aa49678937e972df8ed47be6809579a584d
+  .git/objects/cc/7fe5ec9dadcf1b9c939fe26b197d31ee188cec
+  .git/objects/d3/164660cb22ae93c3ff1eebdc17b1fba686f64a
+  .git/objects/d4/8c9315ee0c737f0ce67a87c1c8a017a5884034
+  .git/objects/d4/ec0d4fcff24b682af89cdcf11bced8b2a403ca
+  .git/objects/d6/334e5ecae23ab4083212f1dcdc81ea61abd205
+  .git/objects/d7/5f824ec6278db24891505b14ab3d915514dba7
+  .git/objects/d7/98acc2266b6478d03a63f4d5599d589887a346
+  .git/objects/d8/25dcd858108fcc47f4648fd8deaac9e7023164
+  .git/objects/d9/4538cd47494a3a1bf4f605c2f9bc5919398db9
+  .git/objects/e6/07af1ea3d1411df5143ff35f3753e088637230
+  .git/objects/e6/b257a48d601b9aaa8a3624a79a5ca07d051eb0
+  .git/objects/ec/ea38b5228897f6c1e2441ea422ee3b7301b625
+  .git/objects/ee/4126992e292b66d33ca71cb8086a354116c08d
+  .git/objects/f0/01d67c646c398d966c1f43067b44bdc91371b7
+  .git/objects/f2/a0052d161b1876dbc4351d84d7661341afa4f8
+  .git/objects/f6/f14ed7353382854ab57e51cfa879295ae2f6a9
+  .git/objects/f9/be9380439405b4278270c26c30e3bd071b89bd
+  .git/objects/fc/2152bba344751e37b6326d06eae585fcab972d
+Source packages should not contain undeclared executable files.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .DS_Store
+  .Rhistory
+  .gitignore
+  ..Rcheck
+  .Rproj.user
+  .git
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘bayestraitr’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... WARNING
+Invalid license file pointers: LICENSE
+Checking should be performed on sources prepared by ‘R CMD build’.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following directories with names of check directories:
+  ./..Rcheck
+  ./bayestraitr.Rproj.Rcheck
+Most likely, these were included erroneously.
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... WARNING
+'::' or ':::' import not declared from: ‘geiger’
+Namespace in Imports field not imported from: ‘tidyverse’
+  All declared Imports should be used.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.get_attributes: no visible global function definition for ‘%>%’
+.get_attributes: no visible binding for global variable ‘value’
+.get_attributes: no visible binding for global variable ‘header’
+.get_attributes: no visible binding for global variable ‘info’
+.get_attributes: no visible binding for global variable ‘.’
+bt_read.log: no visible global function definition for ‘%>%’
+bt_read.log: no visible global function definition for ‘read.table’
+bt_read.schedule: no visible global function definition for ‘%>%’
+bt_read.schedule: no visible global function definition for
+  ‘read.table’
+bt_read.schedule: no visible binding for global variable ‘.’
+bt_read.stones: no visible global function definition for ‘str_detect’
+bt_read.stones: no visible global function definition for ‘%>%’
+bt_read.stones: no visible global function definition for ‘read.table’
+bt_read.stones: no visible binding for global variable ‘.’
+bt_read.stones: no visible global function definition for
+  ‘str_extract_all’
+bt_write: no visible global function definition for ‘complete.cases’
+bt_write: no visible global function definition for ‘write.table’
+Undefined global functions or variables:
+  %>% . complete.cases header info read.table str_detect
+  str_extract_all value write.table
+Consider adding
+  importFrom("stats", "complete.cases")
+  importFrom("utils", "read.table", "write.table")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'bt_write'
+  ‘filename’
+Documented arguments not in \usage in documentation object 'bt_write':
+  ‘optional:’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in ‘bayestraitr-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: hello
+> ### Title: Hello, World!
+> ### Aliases: hello
+> 
+> ### ** Examples
+> 
+> hello()
+Error in hello() : could not find function "hello"
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... ERROR
+  Running ‘testthat.R’
+Running the tests in ‘tests/testthat.R’ failed.
+Last 13 lines of output:
+  10: file(filename, "r")
+  
+  ══ testthat results  ═══════════════════════════════════════════════════════════
+  OK: 8 SKIPPED: 0 FAILED: 8
+  1. Error: Multistate MCMC Log file is read correctly (@test_multistate.R#7) 
+  2. Error: Multistate Max. Likelihood Log file is read correctly (@test_multistate.R#16) 
+  3. Error: Multistate MCMC w Tags Log file is read correctly (@test_multistate.R#25) 
+  4. Error: Multistate MCMC w MRCA Log file is read correctly (@test_multistate.R#35) 
+  5. Error: Multistate MCMC w Fossilisation Log file is read correctly (@test_multistate.R#44) 
+  6. Error: Multistate Stones sampling is read correctly (@test_stones.R#7) 
+  7. Error: Multistate Stones settings is read correctly (@test_stones.R#16) 
+  8. Error: Multistate Stones log-likelihood is read correctly (@test_stones.R#29) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+* checking PDF version of manual ... OK
+* DONE
+Status: 2 ERRORs, 5 WARNINGs, 2 NOTEs

@@ -1,7 +1,8 @@
 # bayestraitr
 Functions for importing and creating BayesTraits files into R.
 
-If you have a problem with this pacakge - please log an issue and I will get to it ASAP! 
+If you have any troubles with this package - please log an issue and I will get to it ASAP! 
+
 (or if you can fix it yourself, please feel free!)
 
 To install this package run this line:

@@ -21,8 +21,8 @@ bt_read.log <- function(filename){
   }
   close(con)
 
-  settings = readLines(filename, n = i - 1) %>%
-    .get_attributes()
+  settings_raw = readLines(filename, n = i - 1)
+  settings = .get_attributes(settings_raw)
 
   d = read.table(filename, skip = i-1, sep = '\t',
              header = TRUE, check.names = FALSE, quote=NULL)
@@ -34,15 +34,14 @@ bt_read.log <- function(filename){
 }
 
 .get_attributes = function(line){
-  line %>%
-  dplyr::as_tibble() %>% #View()
-    tidyr::separate(value, into = c("header", "info"), sep = "\\s{2,}", extra = "merge", fill = "right") %>%
-    dplyr::mutate(header = dplyr::na_if(header, "")) %>%
-    tidyr::fill(header) %>% # fills empty info
-    dplyr::filter(!is.na(info)) %>% # gets rid of titles with empty info
-    dplyr::mutate(info = stringr::str_trim(info)) %>%
-    split(.$header) %>%
-    purrr::map(dplyr::pull, info)
+  one = dplyr::as_tibble(line)
+  two = tidyr::separate(one, value, into = c("header", "info"), sep = "\\s{2,}", extra = "merge", fill = "right")
+  three = dplyr::mutate(two, header = dplyr::na_if(header, ""))
+  four = tidyr::fill(three, header) # fills empty info
+  five = dplyr::filter(four, !is.na(info)) # gets rid of titles with empty info
+  six = dplyr::mutate(five, info = stringr::str_trim(info))
+  seven = split(six, six$header)
+  purrr::map(seven, dplyr::pull, info)
 }
 
 #' Read BayesTraits Schedule files
@@ -64,8 +63,8 @@ bt_read.schedule = function(filename){
     i = i + 1
   }
 
-  settings = readLines(filename, n = i - 1) %>%
-    read.table(text = ., sep = "\t", col.names = c("setting", "value"))
+  settings_raw = readLines(filename, n = i - 1)
+  settings = read.table(text = settings_raw, sep = "\t", col.names = c("setting", "value"))
 
   close(con)
 
@@ -93,15 +92,13 @@ bt_read.stones = function(filename){
 
   idx = which(str_detect(stone_file, "Stone No\t"))
 
-  settings = stone_file[1:(idx-1)] %>%
-    .get_attributes()
+  settings = .get_attributes(stone_file[1:(idx-1)])
 
-  stones = stone_file[idx:(length(stone_file) - 1)] %>%
-    read.table(text = ., sep = "\t", header = TRUE)
+  stones =read.table(text = stone_file[idx:(length(stone_file) - 1)],
+               sep = "\t", header = TRUE)
 
-  marginal_likelihood = stone_file[length(stone_file)] %>%
-    str_extract_all("[0-9\\.]+") %>%
-    as.numeric()
+  marginal_likelihood = str_extract_all(stone_file[length(stone_file)] , "[0-9\\.]+")
+  marginal_likelihood = as.numeric(marginal_likelihood)
 
   obj = list(stones_sampling = stones,
              marginal_likelihood = marginal_likelihood)

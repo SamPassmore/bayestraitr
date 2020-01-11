@@ -12,9 +12,9 @@ Encoding: UTF-8
 LazyData: true
 Depends:
 Suggests:
-    ape,
     testthat
 Imports:   
+  ape,
   dplyr,
   stringr,
   tidyr,

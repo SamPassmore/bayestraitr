@@ -13,7 +13,7 @@ LazyData: true
 Depends:
 Suggests:
     testthat
-Imports:   
+Imports: 
   ape,
   dplyr,
   ggdag,
@@ -21,4 +21,4 @@ Imports:
   tidyr,
   tidyverse,
   purrr
-RoxygenNote: 6.0.1
+RoxygenNote: 7.0.0

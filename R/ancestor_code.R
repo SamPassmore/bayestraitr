@@ -1,3 +1,14 @@
+#' AddTag: Code to determine a tag for BayesTraits
+#'
+#' Given a tree and a set of taxa, this function will return all taxa between the two given and return
+#' an AddTag line that can be added to a BayesTraits script to use with other analysis (e.g. RecNode)
+#' @keywords excd, BayesTraits, phylogeny
+#' @param tree an object of class phylo
+#' @param taxa a vector of character strings indicating relevant taxa
+#' @param label the name of the label (ANC by default)
+#' @return a string starting with 'AddTag' followed by the label and taxa names
+#' @export
+
 bt_addtag = function(tree, taxa, label = "ANC"){
   anc = ape::getMRCA(tree, taxa)
   desc_idx = phytools::getDescendants(tree, node = anc)
@@ -8,6 +19,15 @@ bt_addtag = function(tree, taxa, label = "ANC"){
 
   sprintf("AddTag %s %s", label, desc_taxa)
 }
+
+#' Create model: Code to determine restrictions for a DAG
+#'
+#' For a given DAG, this function will return the necessary restrictions for that model to be estimated
+#' Currently, this function returns all parameters that must be restricted to zero.
+#' @keywords excd, BayesTraits, phylogeny
+#' @param dag a description of the model using DAGs. These can be created at dagitty.net and copied into this function.
+#' @return a string of Restrictions that can be placed into a BayesTraits script.
+#' @export
 
 bt_addmodel = function(dag){
   d =  ggdag::tidy_dagitty(dag)

@@ -16,6 +16,7 @@ Suggests:
 Imports:   
   ape,
   dplyr,
+  ggdag,
   stringr,
   tidyr,
   tidyverse,

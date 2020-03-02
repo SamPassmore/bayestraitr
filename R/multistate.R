@@ -97,7 +97,7 @@ bt_read.stones = function(filename){
   stones =read.table(text = stone_file[idx:(length(stone_file) - 1)],
                sep = "\t", header = TRUE)
 
-  marginal_likelihood = str_extract_all(stone_file[length(stone_file)] , "[0-9\\.]+")
+  marginal_likelihood = str_extract_all(stone_file[length(stone_file)] , "-?[0-9\\.]+")
   marginal_likelihood = as.numeric(marginal_likelihood)
 
   obj = list(stones_sampling = stones,

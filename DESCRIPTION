@@ -21,4 +21,4 @@ Imports:
   tidyr,
   tidyverse,
   purrr
-RoxygenNote: 7.0.0
+RoxygenNote: 7.2.1

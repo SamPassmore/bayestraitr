@@ -18,6 +18,10 @@ bt_write <- function(tree, data, variables, dir = "./", na.omit = FALSE, filenam
   # subset data to necessary variables keeping rownames
   data = data[,variables, drop = FALSE]
 
+  if(class(data) == c("tbl_df", "tbl", "data.frame")){
+    stop("Data cannot be a tibble. Please use a data.frame")
+  }
+
   # remove nas if necessary
   if(na.omit){
     data = data[complete.cases(data), , drop = FALSE]

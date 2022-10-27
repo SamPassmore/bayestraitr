@@ -1,10 +1,7 @@
 context("multistate stones reading tests")
 
-library(dplyr)
-library(stringr)
-
 test_that("Multistate Stones sampling is read correctly", {
-  file = bt_read.stones("../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt")
+  file = bt_read.stones("./bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt")
 
   expect_true(compare(colnames(file$stones_sampling),
                       c("Stone.No", "Power", "N", "Stone.MLh",
@@ -12,7 +9,7 @@ test_that("Multistate Stones sampling is read correctly", {
 })
 
 test_that("Multistate Stones settings is read correctly", {
-  file = bt_read.stones("../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt")
+  file = bt_read.stones("./bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt")
 
   expect_true(compare(attributes(file)$settings,
                       list(`Steppingstone sampler:` =
@@ -24,7 +21,7 @@ test_that("Multistate Stones settings is read correctly", {
 })
 
 test_that("Multistate Stones log-likelihood is read correctly", {
-  file = bt_read.stones("../../bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt")
+  file = bt_read.stones("./bayestraits_output/MS_MCMC_wSS_wPR.Stones.txt")
 
   expect_true(compare(attributes(file)$settings,
                       list(`Steppingstone sampler:` =

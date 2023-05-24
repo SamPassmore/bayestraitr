@@ -1,4 +1,9 @@
 # bayestraitr
+
+
+[![DOI](https://zenodo.org/badge/159887721.svg)](https://zenodo.org/badge/latestdoi/159887721)
+
+
 Functions for importing and creating BayesTraits files into R.
 
 If you have any troubles with this package - please log an issue and I will get to it ASAP! 

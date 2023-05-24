@@ -35,9 +35,9 @@ bt_read.log <- function(filename){
 
 .get_attributes = function(line){
   one = dplyr::as_tibble(line)
-  two = tidyr::separate(one, value, into = c("header", "info"), sep = "\\s{2,}", extra = "merge", fill = "right")
+  two = tidyr::separate(one, "value", into = c("header", "info"), sep = "\\s{2,}", extra = "merge", fill = "right")
   three = dplyr::mutate(two, header = dplyr::na_if(header, ""))
-  four = tidyr::fill(three, header) # fills empty info
+  four = tidyr::fill(three, "header") # fills empty info
   five = dplyr::filter(four, !is.na(info)) # gets rid of titles with empty info
   six = dplyr::mutate(five, info = stringr::str_trim(info))
   seven = split(six, six$header)

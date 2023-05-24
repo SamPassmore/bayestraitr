@@ -10,8 +10,6 @@ d = read.csv('./bayestraits_output/Artiodactyl.tsv', sep = '\t')
 
 unique(d$trait1)
 
-
-
 test_that("Add dag test 1", {
   dag = 'dag {
         A -> B

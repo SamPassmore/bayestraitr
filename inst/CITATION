@@ -1,12 +1,11 @@
 citHeader("To cite bayestraitr in publications use:")
 
 citEntry(
-  entry    = "Software",
-  title    = "bayestraitr: A tool for interfacing with R and Bayestraits",
-  author   = as.person("Sam Passmore"),
+  entry    = "Misc",
+  title    = "bayestraitr: A tool for interfacing between R and Bayestraits",
+  author   = "Sam Passmore",
   year     = "2023",
   url      = "https://zenodo.org/record/7964318",
-  textVersion = paste(
-  "Passmore, S. (2023). bayestraitr: A tool for interfacing with R and Bayestraits. Beta Release. Zenodo. https://doi.org/10.5281/zenodo.7964318"
-  )
+  textVersion =
+  "Passmore, S. (2023). bayestraitr: A tool for interfacing between R and Bayestraits. Beta Release. Zenodo. https://doi.org/10.5281/zenodo.7964318"
 )

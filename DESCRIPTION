@@ -7,7 +7,7 @@ Author: person("Sam", "Passmore", email = "passmore.sam@gmail.com",
 Maintainer: Sam Passmore <passmore.sam@gmail.com>
 Description: This package holds functions for creating files to use as inputs into BayesTraits
     and read files to bring BayesTraits output into R for further exploration of analyses. 
-License: GPL-2 | file LICENSE
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Depends:

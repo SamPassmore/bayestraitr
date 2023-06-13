@@ -19,7 +19,7 @@ bt_write <- function(tree, data, variables, dir = "./", na.omit = FALSE, filenam
   data = data[,variables, drop = FALSE]
 
   if(class(data) == c("tbl_df", "tbl", "data.frame")){
-    stop("Data cannot be a tibble. Please use a data.frame")
+    data = as.dataframe(data)
   }
 
   # remove nas if necessary
